@@ -1,0 +1,27 @@
+{
+  "name": "lab-building-apis-with-expressjs",
+  "version": "0.5.0",
+  "description": "innovate birmingham lab, express.js api.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/plebtech/ib-lab-building-apis-with-expressjs.git"
+  },
+  "keywords": [
+    "expressjs",
+    "api"
+  ],
+  "author": "plebtech",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/plebtech/ib-lab-building-apis-with-expressjs/issues"
+  },
+  "homepage": "https://github.com/plebtech/ib-lab-building-apis-with-expressjs#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1"
+  }
+}
