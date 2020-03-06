@@ -21,6 +21,17 @@ router.put('/:id?', (req, res) => {
     let id = req.params.id;
     if (id) {
         res.json(chirpsStore.UpdateChirp(id, req.body));
+    } else {
+        res.sendStatus(400);
+    }
+});
+
+router.delete('/:id?', (req, res) => {
+    let id = req.params.id;
+    if (id) {
+        res.json(chirpsStore.DeleteChirp(id));
+    } else {
+        res.sendStatus(400);
     }
 });
 
