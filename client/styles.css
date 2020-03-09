@@ -1,6 +1,7 @@
 * {
     margin: 1%;
     padding: 1%;
+    font-family: monospace;
 }
 
 body {
@@ -8,4 +9,20 @@ body {
     margin: 3% auto;
     background-color: #222;
     color: #ddd;
+}
+
+#controls {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    border: 2px solid #444;
+}
+#controls > h1 {
+    width: 100%;
+    border: 2px solid #666;
+}
+
+#chirpModal {
+    width: 100%;
+    border: 2px solid #666;
 }
