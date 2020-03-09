@@ -1,10 +1,10 @@
 const express = require('express');
 const chirpsStore = require('../chirpstore.js');
 
-const router = express.Router();
+let router = express.Router();
 
 router.get('/:id?', (req, res) => {
-    let id = req.params.id;
+    const id = req.params.id;
     if (id) {
         res.json(chirpsStore.GetChirp(id));
     } else {

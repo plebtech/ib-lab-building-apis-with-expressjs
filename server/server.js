@@ -3,7 +3,7 @@ const express = require('express');
 const cors = require('cors');
 const apiRouter = require('./routes');
 
-const serv = express();
+let serv = express();
 
 serv.use(cors());
 serv.use(express.json());
