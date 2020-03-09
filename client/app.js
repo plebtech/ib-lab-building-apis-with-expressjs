@@ -22,11 +22,12 @@ $('#controls').append('<h1>chirpr</h1>');
 
 // prepends all chirps to #output div.
 const chirpsPrint = chirps => {
+    $('#output').html(output);
     for (chirp in chirps) {
         let account = chirps[chirp].account;
         let content = chirps[chirp].content;
         if (account !== undefined) {
-            $('#output').prepend(`<h3>${parseInt(chirp)+1}: "${content}" @${account}</h3>`);
+            $('#output').prepend(`<h3>${parseInt(chirp) + 1}: "${content}" @${account}</h3>`);
         }
     }
 }
@@ -36,7 +37,7 @@ const chirpModal = () => {
     $('#chirpModal').append('<input id="account" type="text" name="account" placeholder="account" />');
     $('#chirpModal').append('<input id="content" type="text" name="chirp" placeholder="chirp" />');
     $('#chirpModal').append('<button id="chirp">chirp it</button>');
-    $('#chirp').click(() => {
+    $('#chirp').click(async () => {
         let chirp = {};
         chirp.account = $('#account').val();
         chirp.content = $('#content').val();
@@ -47,8 +48,9 @@ const chirpModal = () => {
             contentType: 'application/json; charset=utf-8',
             data: chirpStr
         });
-        $('#output').append('<h3>chirp goes here.</h3>');
+        chirpsGet();
     });
+
 }
 
 $('body').append('<div id="output"></div>');
