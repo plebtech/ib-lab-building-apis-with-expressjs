@@ -1,4 +1,4 @@
-/// wait for load.
+// wait for load.
 $(document).ready(function () {
     $('.demo').click(function () {
         $(this).hide(200);
@@ -22,7 +22,7 @@ $('#controls').append('<h1>chirpr</h1>');
 
 // prepends all chirps to #output div.
 const chirpsPrint = chirps => {
-    $('#output').html(output);
+    $('#output').html('');
     for (chirp in chirps) {
         let account = chirps[chirp].account;
         let content = chirps[chirp].content;

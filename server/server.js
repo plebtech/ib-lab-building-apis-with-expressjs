@@ -15,4 +15,4 @@ serv.use(express.static(path.join(__dirname, '../client')));
 
 serv.use('/api', apiRouter);
 
-serv.listen(3000);
+serv.listen(3000, () => console.log('express running on port 3000.'));

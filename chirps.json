@@ -1,1 +1,15 @@
-{"0":{"account":"account","content":"chirp"},"nextid":1}
+{
+    "0": {
+        "account": "account",
+        "content": "chirp"
+    },
+    "1": {
+        "account": "josh",
+        "content": "shut up"
+    },
+    "2": {
+        "account": "rob",
+        "content": "yeehaww"
+    },
+    "nextid": 3
+}
